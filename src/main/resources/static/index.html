@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Local Lens · Java code review</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<main>
+<header><div class="brand"><span class="logo">L</span> LOCAL LENS</div><span class="badge"><i></i> Local Java review</span></header>
+<section class="intro"><p class="eyebrow">YOUR CODE. YOUR COMPUTER.</p><h1>A second set of eyes<br>for your Java code.</h1><p class="subtitle">Catch potential issues, understand the tradeoffs, and get practical fixes from a local model.</p></section>
+<form id="review-form">
+<div class="workspace"><section class="panel editor"><div class="panel-heading"><h2>Source code</h2><button type="button" id="example" class="link">Load example</button></div><label for="code" class="sr-only">Java source code</label><textarea id="code" spellcheck="false" placeholder="Paste a Java class or method here…" required maxlength="6000"></textarea><div class="editor-footer"><span>Java · snippet review</span><span id="budget">0 / 6,000 bytes</span></div></section>
+<section class="panel result"><div class="panel-heading"><h2>Review findings</h2><span id="state" role="status">Ready</span></div><pre id="output" aria-label="Review findings">Your review will appear here as it is generated.
+
+Choose a focus and submit a small snippet to get started.</pre></section></div>
+<div class="controls"><div><label for="focus">Review focus</label><select id="focus"><option value="BUGS">Bugs & correctness</option><option value="SECURITY">Security</option><option value="PERFORMANCE">Performance</option><option value="READABILITY">Readability</option></select></div><div class="actions"><button type="button" id="stop" class="secondary" disabled>Stop</button><button id="submit" type="submit">Review code <span aria-hidden="true">↗</span></button></div></div>
+</form>
+<p id="notice" role="alert"></p><footer>No external AI API. No saved snippets. Model suggestions need your judgment.<br><span>Start Ollama with cloud features disabled and download a local model before reviewing.</span></footer>
+</main><script src="/app.js"></script>
+</body></html>
