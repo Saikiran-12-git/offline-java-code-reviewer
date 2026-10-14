@@ -128,7 +128,7 @@ These dependency-free UI logic tests cover split JSON frames, text rendering,
 UTF-8 input limits, upstream errors, incomplete streams, and Stop behavior. They
 use a minimal DOM stub and do not claim a visual browser test.
 
-GitHub Actions builds and tests with Java 21 and runs the UI logic tests on every push and pull request.
+GitHub Actions builds and tests with Java 21 or higher and runs the UI logic tests on every push and pull request.
 Tests verify integration behavior, not model reasoning quality. No model quality,
 latency benchmark, or quantization comparison is claimed. See
 [EVALUATION.md](EVALUATION.md) for a reproducible manual quality check.
